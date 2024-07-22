@@ -1,0 +1,133 @@
+.navbar{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+}
+.navbarMenu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #0f193d;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbarMenu li{
+    cursor: pointer;
+}
+.navbarRight{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+    background-color: transparent;
+    font-size: 16px;
+    color: #0f193d;
+    border: 3px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: #fff4f2;
+    font-weight: 600;
+    
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #495572;
+}
+.navbarSearchIcon{
+    position: relative;
+}
+
+.navbarSearchIcon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+@media (max-width: 1050px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbarMenu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbarRight{
+        gap: 30px;
+    }
+    .navbarRight img{
+        width: 22px;
+    }
+    .navbarRight button{
+        padding: 8px 25px;
+    }
+}
+@media (max-width: 900px){
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbarMenu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbarRight{
+        gap: 20px;
+    }
+    .navbarRight img{
+        width: 20px;
+    }
+    .navbarRight button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+.navbar-profile{
+    position: relative;
+}
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+}
+.navbar-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.navbar-profile-dropdown img{
+    width: 20px;
+}
+
+.navbar-profile-dropdown li:hover{
+    color: tomato;
+}
+@media (max-width: 750px){
+    .navbarMenu{
+        display: none;
+    }
+}
