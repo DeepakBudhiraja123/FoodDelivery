@@ -1,0 +1,25 @@
+.NavBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    align-items: center;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    gap: 20px;
+}
+.NavBar .logo{
+    width: 80%;
+    height: 10%;
+}
+.NavBar h4{
+    color: rgb(12, 12, 77);;
+}
+.NavBar .profile{
+    width: 80px;
+    height: 80px;
+}
